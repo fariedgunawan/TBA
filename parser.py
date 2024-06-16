@@ -60,25 +60,25 @@ def isPredikat(word: str) -> bool:
                 else: currState = -1
             case 2: currState = 7 if letter == 'a' else -1
             case 7: currState = 12 if letter == 'c' else -1
-            case 12: currState = 17 if letter == 'a' else -1
+            case 12: currState = 17 if letter == 'a' else -1 #Final state
             case 17: currState = 17 if letter == ' ' else -1 #Final State
             case 3: currState = 8 if letter == 'u' else -1
             case 8: currState = 13 if letter == 'l' else -1
             case 13: currState = 18 if letter == 'i' else -1
-            case 18: currState = 22 if letter == 's' else -1
+            case 18: currState = 22 if letter == 's' else -1 #Final state
             case 22: currState = 22 if letter == ' ' else -1 #FINAL STATE
             case 4: currState = 9 if letter == 'i' else -1
             case 9: currState = 14 if letter == 'h' else -1
             case 14: currState = 19 if letter == 'a' else -1
-            case 19: currState = 23 if letter == 't' else -1
+            case 19: currState = 23 if letter == 't' else -1 #Final state
             case 23: currState = 23 if letter == ' ' else -1 #FINAL STATE
             case 5: currState = 10 if letter == 'k' else -1 
             case 10: currState = 15 if letter == 'a' else -1 
-            case 15: currState = 20 if letter == 'n' else -1 
+            case 15: currState = 20 if letter == 'n' else -1 #Final state
             case 20: currState = 20 if letter == ' ' else -1 #Final state
             case 6: currState = 11 if letter == 'n' else -1 
             case 11: currState = 16 if letter == 'u' else -1 
-            case 16: currState = 21 if letter == 'm' else -1 
+            case 16: currState = 21 if letter == 'm' else -1 #Final state
             case 21: currState = 21 if letter == ' ' else -1 #Final State
     return currState == 17 or currState == 22 or currState == 23 or currState == 20 or currState == 21
 
