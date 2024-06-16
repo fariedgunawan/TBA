@@ -12,7 +12,7 @@ def tokenRecognizer(word: str):
         return '?'
 
 def isSubjek(word: str) -> bool:
-    # Subjek = {'saya', 'kamu', 'dia', 'kami', 'mereka'}
+    # Subjek = {'aku', 'anda', 'kamu', 'dia', 'saya'}
     currState = 0
     for letter in word:
         match currState:
